@@ -1,0 +1,6 @@
+pylint
+fastapi
+jinja2
+uvicorn
+yfinance
+sqlalchemy
