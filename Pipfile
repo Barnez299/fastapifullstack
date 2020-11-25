@@ -12,6 +12,8 @@ uvicorn = "*"
 yfinance = "*"
 Jinja2 = "*"
 SQLAlchemy = "*"
+psycopg2 = "*"
+psycopg2-binary = "*"
 
 [requires]
 python_version = "3.9"

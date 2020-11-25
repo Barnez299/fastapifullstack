@@ -1,8 +1,17 @@
 # from typing import Optional
+import models
 from fastapi import FastAPI, Request
 from fastapi.templating import Jinja2Templates
+from database import SessionLocal, engine
+from sqlalchemy import create_engine
+from sqlalchemy.orm import Session, sessionmaker
+
+
 
 app = FastAPI()
+
+# initiates db model
+models.Base.metadata.create_all(bind=engine)
 
 # define templates directory
 
